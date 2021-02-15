@@ -5,7 +5,7 @@ import json
 import random
 from replit import db
 from keep_alive import keep_alive
-from test import StarSystem, Commander_name, Friend_name, Friend_online
+
 
 client = discord.Client()
 
@@ -36,16 +36,6 @@ def get_weather(query):
   weather = f"\nIt is currently {temp} and {cond2} in {place} dear." 
   return(weather)
   
-
-def star_system():
-  return(StarSystem)
-
-def Commander_namefunc():
-  return(Commander_name)
-
-def Friend_namefunc():
-  friendnews = "Your friend " + Friend_name + " is " + Friend_online
-  return(friendnews)
 
 def get_food():
   response = requests.get("https://www.themealdb.com/api/json/v1/1/random.php")
@@ -86,16 +76,6 @@ async def on_ready():
     if message.content.startswith('$inspire'):
       quote = get_quote()
       await message.channel.send(quote)
-
-    if message.content.startswith('$location'):
-      await message.channel.send(StarSystem)
-
-    if message.content.startswith('$myname'):
-      await message.channel.send(Commander_name)
-
-    if message.content.startswith('$Friend'):
-      friendnews = Friend_namefunc()
-      await message.channel.send(friendnews)
 
     if message.content.startswith('$dinner'):
       food = get_food()
