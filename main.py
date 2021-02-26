@@ -9,7 +9,8 @@ from keep_alive import keep_alive
 
 client = discord.Client()
 
-bad_words = ["shit","shitting","shat","fuck","Fuck","fucking","fucked","piss","pissed","cunt","asshole","dick","cock","pussy","God","god","damn","jeez","motherfucker","assclown","cheeseburger","bitch","whore","bastard","wiener","fart","tits","tit","ass","poop","pee","urine","Jesus","Christ","hell","godammit","heck","dammit","damn","slut","skank"]
+#This is a list of foul language Old Ma is going to call users out on. Feel free to add some more colourful choices!
+bad_words = ["jerk","sugar","darn"]
 
 angrymother = ["Hey now that's not called for.", "Wash out that mouth buster!", "That language is uncalled for.", "Swearing demotes the soul","Was that neccesary?","I'm going to forget you said that.",'Woah woah woah I didn\'t realize this conversation was rated R!!!',"I'll wash your mouth out with soap for that talk!","Back in my day you'd get the belt for that kind of talk!","You kids better clean up your act!","Bunch of filthy perverts."]
 
